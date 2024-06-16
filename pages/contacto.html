@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="acción"
+      content="segundos"
+      ;
+      url="https://www.facebook.com/UESoficial.SV"
+    />
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="/css/contacto.css" type="text/css" />
+    <link rel="stylesheet" href="/css/output.css">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "nurWlmvUEV4dtb7kO",
+        });
+      })();
+    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="/components/NavbarComponent.js"></script>
+    <script src="js/mail.js"></script>
+  </head>
+  <body class="font-[Fredoka] bg-white h-screen">
+
+    <header class="bg-white">
+        <navbar-component></navbar-component>
+    </header>
+
+    <h2>Contactanos mediante nuestras redes sociales</h2>
+
+    <table>
+      <tr>
+        <td>
+          <a href="https://www.facebook.com/UESoficial.SV">
+            <button class="btn fb" type="button">
+              <img src="/images/fb.png" height="80" width="80" />
+            </button>
+          </a>
+        </td>
+        <td>
+          <a href="https://twitter.com/UESoficial">
+            <button class="btn twtt" type="button">
+              <img src="/images/twitter_x.png" height="80" width="80" />
+            </button>
+          </a>
+        </td>
+        <td>
+          <a href="https://wa.me/78423999">
+            <button class="btn whtpp" type="button">
+              <img src="/images/whatsapp.png" height="80" width="80" />
+            </button>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <div>
+      <p>Contactanos por Correo</p>
+      <input
+        type="text"
+        id="fullName"
+        placeholder="Nombre completo"
+        required
+      /><br />
+      <input
+        type="email"
+        id="email_id"
+        placeholder="Correo electronico"
+        required
+      /><br />
+      <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+    </div>
+    <button class="btn enviar" type="submit" onclick="enviarcorreo()">
+      Enviar
+    </button>
+    <div>
+      CC22070 - cc22070@ues.edu.sv, CV22022 -CV22022@ues.edu.sv, GL12016
+      -GL12016@ues.edu.sv, MM03168 -MM03168@ues.edu.sv, MV22023
+      -MV22023@ues.edu.sv
+    </div>
+
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/665e2c07981b6c5647781f40/1hvftnvck";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>

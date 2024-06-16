@@ -1,0 +1,14 @@
+{
+  "name": "dawbase",
+  "version": "1.0.0",
+  "description": "Proyecto para que a partir de este puedan clonarlo y crear sus propios proyectos web los estudiantes pertenecientes a cualquier grupo de DAW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}

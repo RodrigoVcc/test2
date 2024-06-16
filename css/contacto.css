@@ -1,0 +1,47 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+body {
+    padding: 24px;
+    background-color:cornsilk;
+}
+input, textarea, button{
+    margin: 4px 0;
+    padding: 8px;
+
+}
+.btn{
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+.Enviar{
+    background-color:rgb(236, 213, 120) ;
+}
+.Enviar:hover{
+    background-color:rgb(235, 208, 103) ;
+}
+.fb{
+    background-color:transparent;
+}
+.fb:hover{
+    background-color:rgb(252, 241, 198);
+}
+.twtt{
+    background-color: transparent;
+}
+.twtt:hover{
+    background-color: rgb(252, 241, 198);;
+}
+.whtpp{
+    background-color: transparent;
+}
+
+.whtpp:hover{
+    background-color: rgb(252, 241, 198);;
+} */
