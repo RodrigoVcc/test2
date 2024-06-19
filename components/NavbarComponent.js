@@ -5,17 +5,17 @@ class NavbarComponent extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `<nav class="flex justify-between items-center w-[92%] mx-auto py-2 md:px-[70px] ">
-        <div class="cursor-pointer text-[#FF5353]">
+        <div class="cursor-pointer text-[#FF5353] header__logo">
           <a href="/index.html" class="flex items-center justify-center gap-2">
             <img src="/images/heart.svg" alt="">
             <p class="font-semibold">Everlasting</p>
           </a>
         </div>
         <div
-          class="nav-links duration-500 md:static absolute  text-black md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+          class="nav-links duration-500 md:static absolute  text-black md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 header__links z-10"
         >
           <ul
-            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
+            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-2"
           >
             <li>
               <a class="hover:text-gray-500" href="/index.html">Inicio</a>

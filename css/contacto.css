@@ -1,47 +1,111 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    box-sizing: border-box;
+.main__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    margin: 0 auto;
 }
-body {
-    padding: 24px;
-    background-color:cornsilk;
-}
-input, textarea, button{
-    margin: 4px 0;
-    padding: 8px;
 
+.main__picture {
+    width: 25%;
+    height: 400px;
 }
-.btn{
-    border: none;
+
+.main__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50% 0 0;
+    object-fit: cover;
+    box-shadow: -5px -5px white, 
+  -5px -5px 0px 5px #FF5353;
+}
+
+.main__title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #FF5353;
+}
+
+.main__subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.main__inputs {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main__textarea {
+    resize: none;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.main__input {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.main__button {
+    background-color: #FF5353;
     color: white;
-    cursor: pointer;
-
-}
-.Enviar{
-    background-color:rgb(236, 213, 120) ;
-}
-.Enviar:hover{
-    background-color:rgb(235, 208, 103) ;
-}
-.fb{
-    background-color:transparent;
-}
-.fb:hover{
-    background-color:rgb(252, 241, 198);
-}
-.twtt{
-    background-color: transparent;
-}
-.twtt:hover{
-    background-color: rgb(252, 241, 198);;
-}
-.whtpp{
-    background-color: transparent;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 15px 30px;
 }
 
-.whtpp:hover{
-    background-color: rgb(252, 241, 198);;
-} */
+
+@media (max-width: 768px){
+
+    .main__picture {
+        margin-top: 30px;
+        width: 60%;
+        height: 400px;
+    }
+
+    .main__form {
+        width: 100%;
+    }
+
+    .main__contact {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .main__title {
+        font-size: 2rem;
+    }
+
+    .main__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .main__image {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+}
+
+@media (max-width: 500px){
+    .main__picture {
+        margin-top: 30px;
+        width: 50%;
+        height: 200px;
+    }
+
+    .main__image {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+}

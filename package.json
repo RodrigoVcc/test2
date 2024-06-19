@@ -4,7 +4,9 @@
   "description": "Proyecto para que a partir de este puedan clonarlo y crear sus propios proyectos web los estudiantes pertenecientes a cualquier grupo de DAW",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "server": "webpack-dashboard -- webpack-dev-server --inline --port 8080",
+    "webdriver-update": "webdriver-manager update"
   },
   "author": "",
   "license": "ISC",

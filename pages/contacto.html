@@ -26,9 +26,8 @@
     </script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="/components/NavbarComponent.js"></script>
-    <script src="js/mail.js"></script>
-  </head>
-    <!--Start of Tawk.to Script-->
+    <script src="/components/FooterComponent.js"></script>
+    <script src="/js/mail.js"></script>
     <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -40,13 +39,30 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
-    <!--End of Tawk.to Script-->
-  
+  </head>
   <body class="font-[Fredoka] bg-white h-screen">
-
-    <header class="bg-white">
+    <header class="header">
         <navbar-component></navbar-component>
     </header>
+    <main class="main">
+      <section class="main__contact">
+        <figure class="main__picture">
+          <img src="/images/contact2.jpg" alt="Imagen de Recién Casados" class="main__image">
+        </figure>
+        <form action="#" onsubmit="enviarcorreo(event)" class="main__form" id="form">
+          <h1 class="main__title">¿Tiene algún plan?</h1>
+          <h2 class="main__subtitle">Hable con nosotros</h2>
+          <div class="main__inputs">
+            <input type="text" id="fullName" placeholder="Nombre completo" class="main__input" required/>
+            <input type="email" id="email_id" placeholder="Correo electrónico" class="main__input" required/>
+            <textarea class="main__textarea" id="mensaje" placeholder="Mensaje" required></textarea>
+          </div>
+          <button class="main__button">
+            Enviar
+          </button>  
+        </form>
+      </section>
+    </main>
     <div style="position:absolute; left: 58%; bottom: 0%;">
       <p>Contactanos mediante nuestras redes sociales</p>
     </div>
@@ -62,27 +78,6 @@
         </a>
         </div>
 
-    <div>
-      <pre>
-       <p>Contactanos por Correo</p>
-      <input
-        type="text"
-        id="fullName"
-        placeholder="Nombre completo"
-        required
-      /><br />
-      <input
-        type="email"
-        id="email_id"
-        placeholder="Correo electronico"
-        required
-      /><br />
-      <textarea id="mensaje" placeholder="Mensaje" required></textarea>
-      </div>
-      <button class="btn enviar" type="submit" onclick="enviarcorreo()">
-        Enviar
-      </button>  
-      </pre>
      
     <details class="bg-gray-300 open:bg-amber-200 duration-300">
             <summary class="bg-inherit px-5 py-3 text-lg cursor-pointer">Integrantes</summary>
@@ -94,8 +89,8 @@
         </details>
 
     <div>
-      
+  
     </div>
-
+  <script src="/js/menu.js"></script>
   </body>
 </html>

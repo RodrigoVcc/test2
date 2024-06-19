@@ -6,8 +6,287 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
+body {
+  background-image: linear-gradient(to top, #ffcacc 0%, #ffe2f6 99%, #fecfef 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.main {
+  padding: 2rem;
+  margin-bottom: 50px;
+}
+
+.header {
+  background-image: linear-gradient(to top, #ffcacc 0%, #ffe2f6 99%, #fecfef 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
+.header__links {
+  background-image: linear-gradient(to top, #ffcacc 0%, #ffe2f6 99%, #fecfef 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 .section__img {
   box-shadow: 4px -4px white, 
   5px -5px 0px 5px #FF5353;
+}
+
+.footer {
+  color: white;
+  font-weight: 500;
+  background-color: #FF5353;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px;
+  margin-top: 200px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 40px;
+}
+
+.footer__class {
+  width: 100%;
+}
+
+.footer__image {
+  display: block;
+  width: 60%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.slider__container {
+  text-align: center;
+  margin: 20px 0;
+  padding: 2rem;
+}
+
+.slider {
+  display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+.slider__wrapper {
+  position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider__nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider__nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider__nav a:hover {
+  opacity: 1;
+}
+
+.slider__title {
+  margin-bottom: 40px;
+}
+
+.wedding__container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.wedding__packages {
+  margin: 40px auto;
+  display: flex;
+  gap: 4rem;
+}
+
+.wedding__subtitle {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.wedding__price {
+  font-size: 2.5rem;
+  color: #FF5353;
+  font-weight: 600;
+}
+
+.wedding__plan {
+  border-radius: 20px;
+  box-shadow: 2px 2px .9px black;
+  border: 1px solid black;
+  padding: 1.5rem;
+}
+
+.wedding__cta {
+  background-color: #FF5353;
+  color: wheat;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 20px auto;
+  border-radius: 30px;
+  display: block;
+  padding: 10px 20px;
+  /* border: 1px solid black; */
+}
+
+
+@media (min-width: 1032px) {
+  .footer__picture {
+    width: 30%;
+  }
+}
+
+@media (max-width: 975px){
+  .wedding__packages {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+  }
+
+  .main {
+    padding: 0;
+  }
+  
+  .footer__picture {
+    width: 50%;
+  }
+
+  .main__article {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__section {
+    margin-bottom: 100px;
+  }
+
+  .main__section__title {
+    font-size: 40px;
+  }
+
+  .main__section__subtitle, 
+  .slider__title,
+  .wedding__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .main__section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main__section__picture {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+
+  .section__img {
+    border-radius: 9999px;
+    width: 50%;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  body {
+    padding: 0;
+  }
+  
+  .main {
+    padding: 0;
+  }
+
+  .main__section__title {
+    font-size: 36px;
+  }
+
+  .main__section__subtitle {
+    font-size: 20px;
+  }
+
+  .section__img {
+    border-radius: 9999px;
+    width: 100%;
+  }
+
+  .main__section__picture {
+    margin-top: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    overflow: hidden;
+    padding: 30px;
+    height: fit-content;
+  }
+
+  .footer__picture {
+    width: 100%;
+  }
+
 }
